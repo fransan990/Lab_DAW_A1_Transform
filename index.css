@@ -113,3 +113,35 @@ ul:after,
     height: 0;
     clear: both;
 }
+
+footer a {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top: 8px solid white;
+    border-bottom: 4px solid white;
+
+    display: block;
+    text-decoration: none;
+
+}
+
+footer ul {
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+
+
+
+#menu-footer li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    color: white;
+
+}

@@ -12,38 +12,7 @@ body {
 }
 
 img {
-
     width: 900px;
-}
-
-header a {
-    background-color: black;
-    color: white;
-    text-align: center;
-    border-top: 8px solid white;
-    border-bottom: 4px solid white;
-    border-left: 4px solid white;
-    border-right: 4px solid white;
-    margin-top: 1em;
-    display: block;
-    text-decoration: none;
-}
-
-header li:nth-child(odd) a {
-    margin-right: 1em;
-}
-
-h1 {
-    width: 80%;
-    text-align: center;
-    color: white;
-    background-color: teal;
-    display: block;
-    margin: auto;
-    border: white solid 6px;
-    margin-top: 1em;
-    box-sizing: border-box;
-
 }
 
 #img1 {
@@ -56,9 +25,7 @@ h1 {
     border: solid 15px white;
     margin-top: 2em;
     border-top: solid white 30px;
-
     transform: rotate(2deg);
-
 }
 
 div#img1 img {
@@ -92,13 +59,10 @@ div#img3 img {
     height: 400px;
     overflow: hidden;
     float: left;
-    margin-right: 0.5em;
     border: solid 15px white;
     margin-top: 2em;
     border-top: solid white 30px;
-
     transform: rotate(5deg);
-
 }
 
 header li {
@@ -115,6 +79,44 @@ ul:after,
     display: block;
     height: 0;
     clear: both;
+}
+
+#menu-footer li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    color: white;
+
+}
+
+header a {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top: 8px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    margin-top: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+header li:nth-child(odd) a {
+    margin-right: 1em;
+}
+
+h1 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    display: block;
+    margin: auto;
+    border: white solid 6px;
+    margin-top: 1em;
+    box-sizing: border-box;
+
 }
 
 footer a {
@@ -137,10 +139,73 @@ footer {
     margin-top: 2em;
 }
 
-#menu-footer li {
-    list-style: none;
-    float: left;
-    width: 20%;
-    color: white;
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+    }
 
+    #img1 {
+        margin-left: 80px;
+    }
+
+    #img2 {
+        margin-left: 80px;
+    }
+
+    #img3 {
+        margin-left: 80px;
+    }
+
+    li {
+        width: 100%;
+        float: left;
+    }
+
+    #menu-footer li {
+        float: left;
+        width: 50%;
+    }
+
+    #menu-footer li:nth-child(5) {
+        width: 100%;
+        float: left;
+    }
+
+    footer {
+        border: white solid 5px;
+    }
+}
+
+@media (min-width: 701px) {
+    body {
+        width: 100%;
+    }
+
+    header li {
+        width: 50%;
+    }
+
+    header li:nth-child(odd) a {
+        margin-right: 1em;
+    }
+
+    footer a {
+        border-top: 8px solid white;
+        border-bottom: 4px solid white;
+    }
+
+    #img3 {
+        display: none;
+    }
+}
+
+@media (min-width: 990px) {
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+
+    #img3 {
+        display: block;
+    }
 }
